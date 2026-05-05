@@ -78,5 +78,5 @@ function ajouterBalise(balise) {
 ajouterBalise("<h1>Bonjour</h1>");
 ajouterBalise("<p>On est trop fort en JS</p>");
 ajouterBalise("<p>On est des cracks</p>");
-ajouterBalise()
+
 

@@ -128,3 +128,59 @@ function afficherPrenom(prenom) {
     ajouterBalise(`<p>Bonjour ${prenom}, comment ça va ?</p>`);
 }   
 afficherPrenom("Margaux");
+
+//EXO 10
+
+// role : fonction qui convertit un montant en euros en dollars
+// Parametre : un montant en euros
+// Retourner : le montant converti en dollars   
+
+function convertirEuroEnDollar(montantEuro) {
+    const tauxConversion = 1.17;
+    return montantEuro * tauxConversion;
+}
+console.log(convertirEuroEnDollar(10.00));    
+
+// role : demander un prix et un taux de change a l'utilisateur ET convertir le prix 
+// Parametre : transformer chaine de caractere en nombre et demander un taux de conversion
+// Retourner : le prix converti
+
+function convertirPrix() {
+    let prixEuro = parseFloat(prompt("Quel prix veut tu convertir ?"));
+    let tauxConversion = parseFloat(prompt("Entrez le taux de conversion (1 euro = 1.17 dollars) :"));
+    let prixDollar = prixEuro * tauxConversion;
+    return prixDollar;
+}   
+let prixConverti = convertirPrix();
+alert(`Le prix converti en dollars est : ${prixConverti.toFixed(2)} $`);
+
+//EXO 11
+
+// role : calculer moyenne automatiquement et demander les notes a l'utilisateur
+// Parametre : rien
+// Retourner : retourner de la moyenne de ces 4 notes dans un pop up en alert
+
+function calculerMoyenne() {
+    let math = parseFloat(prompt("Entrez votre note de math :"));
+    let francais = parseFloat(prompt("Entrez votre note de français :"));
+    let chimie = parseFloat(prompt("Entrez votre note de chimie :"));
+    let italien = parseFloat(prompt("Entrez votre note d'italien :"));
+    return (math + francais + chimie + italien) / 4;
+}
+function afficherMoyenne() {
+    let moyenne = calculerMoyenne();
+    alert(`Votre moyenne est : ${moyenne.toFixed(2)}`);
+}
+afficherMoyenne();
+
+
+/**
+ * la fonction
+ * @param 
+ * @returns la réponse 
+ */
+
+
+
+
+
