@@ -175,10 +175,13 @@ afficherMoyenne();
 
 
 /**
- * la fonction
+ * la fonction 
  * @param 
  * @returns la réponse 
  */
+    
+
+
 
 
 

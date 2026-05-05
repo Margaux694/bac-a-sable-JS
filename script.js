@@ -39,7 +39,7 @@ console.log(phrase.length);
 let mot = "chateau";
 console.log(mot.replace("t", "p"));
 
- 
+
 mot = "pelican";
 console.log(mot.indexOf("p"));
 console.log(mot[0]);
@@ -78,5 +78,47 @@ function ajouterBalise(balise) {
 ajouterBalise("<h1>Bonjour</h1>");
 ajouterBalise("<p>On est trop fort en JS</p>");
 ajouterBalise("<p>On est des cracks</p>");
+
+// CONDITION
+
+// SI b = c -> bien jouer
+//Sinon -> dommage
+
+let b = "28";
+let c = "6";
+if (b === c) {
+    console.log("Bien joué");
+} else {
+    console.log("Dommage");
+}
+
+//
+
+if (b === c) {
+    console.log("C'est pareil");
+} else if (b > c) {
+    console.log("b est plus grand que c");
+}
+else {
+    console.log("c est inferieur a b");
+}
+
+// role : vérifier si l'utilisateur est connecté ou pas
+
+let connected = true;
+if (connected) {
+    console.log("Bienvenue sur votre compte");
+} else {
+    console.log("Veuillez vous connecter");
+}
+
+
+
+
+
+
+
+
+
 
 
