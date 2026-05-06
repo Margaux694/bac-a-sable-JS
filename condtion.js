@@ -135,7 +135,7 @@ console.log(feuTricolore());
 // résultat : moyenne generale
 
 function moyenneGenerale(math, francais, anglais, histoire, geographie, sport) {
-    const moyenne = (math + francais + anglais + histoire + geographie + sport) / 6;
+    let moyenne = (math + francais + anglais + histoire + geographie + sport) / 6;
     return "La moyenne générale de l'élève est : " + moyenne.toFixed(2);
 }
 console.log(moyenneGenerale(15, 12, 14, 10, 13, 18));
@@ -161,10 +161,11 @@ console.log(appreciation(13));
 
 // role : construit un bulletin complet
 // paramètre : moyenne générale et commentaire d’appréciation
-// résultat : afficher le bulletin dans la console
+// résultat : Rien 
 
 function bulletin(moyenne) {
-    const appreciationCommentaire = appreciation(moyenne);
+    let appreciationCommentaire = appreciation(moyenne);
     return "Bulletin de l'élève :\nMoyenne générale : " + moyenne.toFixed(2) + "\nAppréciation : " + appreciationCommentaire;
 }
-console.log(bulletin(14));
+//console.log(bulletin(14));
+alert(bulletin(14));
