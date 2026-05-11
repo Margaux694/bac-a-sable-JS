@@ -44,3 +44,9 @@ for (i = 1; i < motLongeur.length; i++) {
 }
 }
 console.log(motLongeur.length);
+
+
+
+
+for (let i =0 i < panierFruits i++)
+    console.log ()
