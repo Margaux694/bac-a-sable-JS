@@ -1,0 +1,32 @@
+.red {
+    color: pink;
+}
+
+.bg{
+    background-color: aqua;
+}
+
+.text-white{
+    color: black;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-beetween{
+    justify-content: space-between;
+}
+
+.w-30{
+    w
+}
+
+.txt-center {
+    text-align: center;
+}
