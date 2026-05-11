@@ -30,6 +30,7 @@ afficherMoyenne();
 
 // tableae$u des notes 
 */
+
 // CALCULER UNE MOYENNE FACILEMT
 
 // role : calculer la moyenne

@@ -46,7 +46,25 @@ for (i = 1; i < motLongeur.length; i++) {
 console.log(motLongeur.length);
 
 
+let pommes = 3;
+let poires = 2; 
+let banane = 1; 
+let cerise = 3;
 
+tableauFruit.array.forEach(fruit => {
+    if (fruit === "pommes") {
+        compteurPommes++
 
-for (let i =0 i < panierFruits i++)
-    console.log ()
+    }else if (fruit === "cerises") {
+        compteurCerise++
+        
+    }else if (fruit === "poires") {
+        compteurPoires++
+        
+    }else if (fruit === "bananes") {
+        compteurbananes++
+        
+    }else{
+        console.log (fruit)
+ 
+}});
