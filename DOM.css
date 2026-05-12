@@ -1,0 +1,54 @@
+.hidden {
+    display: none;
+}
+
+.carré {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    border: 2px solid black;
+    display: inline-block;
+    /* ← important pour afficher les div vides */
+    cursor: pointer;
+    margin: 10px;
+}
+
+.carré.selectionné {
+    background-color: purple;
+}
+
+#header {
+    position: fixed;
+    background-color: black;
+    padding: 16px 64px;
+    transition: background 0.3s;
+    width: 100%;
+    /* animation fluide */
+}
+
+#header.colore {
+    background: rgb(148, 55, 115);
+}
+
+.bg-color{
+    background-color: rgb(208, 150, 160);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.g16{
+    gap: 16px;
+}
+
+

@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="manipDOM.js" defer></script>
+  <link rel="stylesheet" href="DOM.css">
+  <script src="manipDOM.js" defer></script>
+
+  <title>Document</title>
+  <!-- 
     <link rel="stylesheet" href="recette-style.css">
-    <script src="recette.js" defer></script>
-    <script src="manipDOM.js" defer></script>
-    <title>Document</title>
-<!--  
+    <script src="recette.js" defer></script> 
      <link rel="stylesheet" href="style.css" />  
     <script src="calculateur-age.js" defer></script>
    <script src="Exo.js" defer></script>
@@ -19,12 +23,88 @@
     <script src="boucle.js" defer></script> 
 <script src="objet.js" defer></script>
      <script src="moyen-eleves.js" defer></script>
---> 
-  </head>
-  <body>
-    
-<div id="grosseBoite"></div>
-<button>Margaux</button>
+-->
+</head>
+<body>
+  <header class="flex gap16">
+  <a href="LOGO">LOGO</a>
+  <nav class="space-between gap16">
+    <a href="">Home</a>
+    <a href="">Projets</a>
+    <a href="">Contact</a>
+  </nav>
+</header>
+  <!--EXO1-->
+  <div>
+    <h1 style="color: rgb(60, 171, 230);">Je suis Margaux j'ai 22 ans</h1>
+  </div>
 
-  </body>
+  <!--EXO 2-->
+  <h2>Masquer ou afficher un element</h2>
+  <div id="monDiv" class="hidden">Qu'est ce qui est jaune et qui attend ?</div>
+  <button id="btn">Afficher/Masquer</button>
+
+
+
+  <!--EXO 3-->
+  <h2>Carré qui ce color au clique</h2>
+  <div class="carré" onclick="selectionner(this)"></div>
+  <div class="carré" onclick="selectionner(this)"></div>
+  <div class="carré" onclick="selectionner(this)"></div>
+
+  <!--EXO 4-->
+  <!--btn et cliquer ppur afficher les click-->
+  <h2>Compteur de clique</h2>
+  <button id="bouton">Cliquez ici</button>
+  <p id="affichage">Nombre de clics : 0</p>
+
+  <h3>L'Intelligence Artificielle : Révolution Technologique du XXIe Siècle</h3>
+  <p>Un regard approfondi sur les origines, les avancées et les enjeux d'une technologie qui redéfinit notre monde</p>
+  <p>Voici votre article long sur l'intelligence artificielle :
+
+L'Intelligence Artificielle : Révolution Technologique du XXIe Siècle
+Un regard approfondi sur les origines, les avancées et les enjeux d'une technologie qui redéfinit notre monde
+
+1. Aux origines de l'intelligence artificielle
+Nous vivons à l'ère d'une transformation sans précédent. En l'espace de quelques décennies seulement, l'intelligence artificielle est passée du statut de concept de science-fiction à celui de réalité omniprésente, s'immisçant dans nos téléphones, nos hôpitaux, nos voitures, nos entreprises et même dans nos relations humaines. Ce phénomène technologique, que beaucoup qualifient de « quatrième révolution industrielle », bouleverse les fondements mêmes de nos sociétés et soulève des questions philosophiques, éthiques et économiques d'une portée considérable.
+L'histoire de l'intelligence artificielle remonte à bien plus loin qu'on ne le croit. Dès l'Antiquité, les philosophes grecs s'interrogeaient sur la possibilité de créer des êtres artificiels doués de raison. Mais c'est au milieu du XXe siècle que les véritables fondations scientifiques ont été posées. En 1950, le mathématicien britannique Alan Turing publie un article fondateur intitulé Computing Machinery and Intelligence, dans lequel il propose le célèbre « test de Turing » : une machine peut être considérée comme intelligente si elle parvient à convaincre un interlocuteur humain qu'il dialogue avec un autre humain.
+Six ans plus tard, en 1956, lors d'une conférence à Dartmouth College aux États-Unis, le terme même d'« intelligence artificielle » est officiellement introduit par John McCarthy, Marvin Minsky, Claude Shannon et Nathaniel Rochester. Ces pionniers avaient une ambition démesurée : reproduire l'ensemble des fonctions cognitives humaines dans une machine. Cette période, souvent appelée l'« âge d'or » de l'IA, fut marquée par un optimisme débordant. Les premiers programmes capables de jouer aux échecs, de résoudre des équations algébriques ou de prouver des théorèmes mathématiques semblaient annoncer une révolution imminente.
+Pourtant, la réalité se révèle bien plus complexe. Les décennies suivantes voient se succéder des périodes d'enthousiasme et de désillusion, que les historiens appellent les « hivers de l'IA ». Les promesses ne se concrétisent pas, les financements se tarissent, et le domaine entre dans une longue traversée du désert. Il faudra attendre les années 1980 et l'émergence des systèmes experts, puis les années 1990 avec l'essor des réseaux de neurones artificiels, pour voir l'IA retrouver une dynamique nouvelle.
+
+2. La révolution du machine learning et du deep learning
+Le véritable tournant arrive au début des années 2000, avec la convergence de trois facteurs décisifs : l'explosion de la puissance de calcul, la disponibilité de masses de données colossales (le fameux « big data ») et le perfectionnement des algorithmes d'apprentissage automatique. Le machine learning — ou apprentissage automatique — repose sur une idée simple en apparence mais révolutionnaire en pratique : plutôt que de programmer explicitement une machine pour accomplir une tâche, on lui fournit des exemples et on la laisse « apprendre » par elle-même à partir de ces données.
+Au sein du machine learning, le deep learning (apprentissage profond) constitue une avancée encore plus spectaculaire. Inspiré du fonctionnement du cerveau humain, il repose sur des réseaux de neurones artificiels organisés en couches multiples. Ces architectures sont capables d'identifier des patterns extrêmement complexes dans des données brutes — images, sons, textes — avec une précision parfois supérieure à celle de l'être humain. C'est grâce au deep learning qu'en 2012, le système AlexNet remporte de manière éclatante le concours ImageNet de reconnaissance d'images, marquant un point de rupture dans l'histoire de la discipline.
+Depuis lors, les avancées se sont enchaînées à un rythme vertigineux. En 2016, AlphaGo de DeepMind bat le champion du monde du jeu de Go, Lee Sedol, dans ce qui était alors considéré comme un exploit impossible — tant la complexité du jeu de Go dépasse celle des échecs. En 2022, ChatGPT est lancé et atteint en un temps record cent millions d'utilisateurs, popularisant auprès du grand public la notion de modèle de langage à grande échelle.
+
+3. Les applications concrètes de l'IA dans notre quotidien
+L'intelligence artificielle n'est plus confinée aux laboratoires de recherche. Elle est présente partout, souvent de manière invisible, dans nos vies quotidiennes. Lorsque votre application de streaming vous recommande une série correspondant exactement à vos goûts, lorsque votre messagerie filtre automatiquement les spams, lorsque votre GPS recalcule votre itinéraire en temps réel pour éviter les embouteillages : dans tous ces cas, c'est l'IA qui agit en coulisses.
+Dans le secteur de la santé, les applications sont particulièrement prometteuses. Des algorithmes de deep learning sont désormais capables de détecter certains cancers — notamment le cancer du sein ou le mélanome — sur des images médicales avec une précision égale, voire supérieure, à celle des meilleurs spécialistes humains. En oncologie, l'IA analyse des séquences génomiques pour identifier les mutations responsables de certaines tumeurs et orienter vers les traitements les plus adaptés. En chirurgie, des robots assistés par IA permettent des interventions d'une précision millimétrique. La pandémie de COVID-19 a également mis en lumière le potentiel de l'IA dans la découverte de nouveaux médicaments et la modélisation des épidémies.
+Dans le domaine des transports, la voiture autonome constitue peut-être l'exemple le plus emblématique. Des entreprises comme Tesla, Waymo ou encore les constructeurs automobiles traditionnels investissent des milliards dans le développement de véhicules capables de se conduire seuls, en combinant vision par ordinateur, traitement du signal et apprentissage par renforcement. Si la voiture entièrement autonome n'est pas encore généralisée, des fonctions comme le freinage automatique d'urgence, le maintien de voie ou le stationnement assisté sont déjà présentes sur de nombreux véhicules du marché.
+Le secteur financier est lui aussi profondément transformé. L'IA permet de détecter les fraudes bancaires en temps réel, d'évaluer les risques de crédit avec une granularité inédite, d'automatiser les transactions boursières à haute fréquence ou encore de personnaliser les conseils en gestion de patrimoine. Les assureurs utilisent des modèles prédictifs pour affiner la tarification de leurs contrats, en intégrant des variables comportementales jusqu'alors inaccessibles.
+
+4. L'IA générative : une nouvelle frontière créative
+Si le machine learning classique s'applique principalement à des tâches de classification, de prédiction ou de détection, une nouvelle catégorie d'IA a émergé ces dernières années avec un potentiel disruptif considérable : l'IA générative. Ces systèmes ne se contentent pas d'analyser des données existantes — ils en créent de nouvelles. Textes, images, musiques, vidéos, codes informatiques : les IA génératives sont capables de produire des contenus d'une qualité et d'une diversité stupéfiantes.
+Les grands modèles de langage comme GPT-4, Claude (développé par Anthropic) ou Gemini (développé par Google DeepMind) sont capables de rédiger des articles, de répondre à des questions complexes, de traduire des textes, d'écrire du code ou de résumer des documents avec une fluidité déconcertante. Du côté des images, des outils comme DALL-E, Midjourney ou Stable Diffusion génèrent en quelques secondes des visuels photoréalistes à partir d'une simple description textuelle. Cette convergence entre le langage naturel et la créativité visuelle ouvre des perspectives inédites pour les industries créatives, le design, la publicité et le divertissement.
+Ces avancées ne sont pas sans soulever des interrogations profondes. Qui détient les droits sur une œuvre générée par une IA entraînée sur des millions d'images d'artistes humains ? Comment distinguer un texte rédigé par un humain d'un texte produit par une machine, et quelles en sont les implications pour le journalisme, l'éducation ou la démocratie ? Ces questions juridiques et éthiques, encore largement sans réponse, font l'objet de débats intenses à travers le monde.
+
+5. Les enjeux éthiques et sociaux
+La puissance croissante de l'IA s'accompagne d'une responsabilité tout aussi croissante. L'un des enjeux les plus débattus est celui des biais algorithmiques. Les systèmes d'IA apprennent à partir de données historiques qui reflètent, inévitablement, les inégalités et les préjugés de nos sociétés. Un algorithme de recrutement entraîné sur les décisions passées d'une entreprise peut ainsi perpétuer, voire amplifier, des discriminations fondées sur le genre, l'origine ethnique ou l'âge. Des études ont montré que certains systèmes de reconnaissance faciale présentent des taux d'erreur significativement plus élevés pour les personnes à la peau sombre, soulevant de graves préoccupations en matière d'équité.
+La question de l'emploi est également centrale. Selon plusieurs études économiques, l'automatisation pilotée par l'IA pourrait, à horizon 2030, transformer profondément entre 30 % et 40 % des emplois dans les pays développés. Si certains métiers disparaîtront, d'autres seront redéfinis et de nouveaux émergeront. L'histoire des révolutions industrielles passées montre que cette transition est possible, mais elle exige des politiques d'accompagnement ambitieuses : formation professionnelle continue, adaptation des systèmes éducatifs, filets de protection sociale renforcés.
+La vie privée représente un autre défi majeur. Les systèmes d'IA sont avides de données personnelles — comportements, préférences, déplacements, états de santé. La collecte massive de ces informations, souvent à l'insu des utilisateurs, pose des questions fondamentales sur la souveraineté numérique des individus. Le règlement européen sur la protection des données (RGPD), entré en vigueur en 2018, constitue une première réponse législative, mais les régulateurs peinent à suivre le rythme effréné des innovations technologiques.
+
+6. La course mondiale à l'IA et les enjeux géopolitiques
+L'intelligence artificielle est devenue un enjeu de puissance nationale de premier ordre. Les États-Unis et la Chine se livrent une compétition féroce pour la suprématie dans ce domaine, que certains analystes n'hésitent pas à comparer à la course à l'espace des années 1960. Pékin a annoncé dès 2017 son ambition de devenir le leader mondial de l'IA d'ici 2030, en mobilisant des ressources publiques et privées colossales. Washington a répliqué en restreignant les exportations de semi-conducteurs avancés vers la Chine et en renforçant ses investissements dans la recherche fondamentale.
+L'Europe, quant à elle, cherche à tracer une voie originale, fondée sur la notion d'« IA de confiance ». L'AI Act européen, adopté en 2024, constitue le premier cadre réglementaire complet au monde dédié à l'intelligence artificielle. Il classe les applications d'IA selon leur niveau de risque et impose des obligations de transparence, de sécurité et de contrôle humain proportionnelles aux dangers potentiels. Cette approche, souvent qualifiée d'« effet Bruxelles », pourrait influencer les réglementations d'autres régions du monde, comme le RGPD l'a fait pour la protection des données.
+
+7. Vers une intelligence artificielle générale ?
+Au-delà des applications actuelles, la communauté scientifique et les grandes entreprises technologiques nourrissent une ambition bien plus vertigineuse : celle de créer une intelligence artificielle générale (AGI, pour Artificial General Intelligence). Contrairement aux IA actuelles, qui sont des outils spécialisés — excellents dans un domaine précis mais incapables de transférer leurs compétences ailleurs —, une AGI serait dotée d'une flexibilité cognitive comparable à celle de l'être humain : capacité d'apprendre de nouvelles tâches, de raisonner par analogie, de faire preuve de créativité et de comprendre le monde dans toute sa complexité.
+Nul ne sait avec certitude si l'AGI est accessible, ni dans quel délai. Certains chercheurs, comme ceux d'OpenAI ou de DeepMind, estiment qu'elle pourrait voir le jour d'ici quelques décennies. D'autres, plus sceptiques, considèrent qu'elle relève encore de la spéculation. Ce qui est certain, en revanche, c'est que la perspective seule de l'AGI soulève des questions existentielles d'une profondeur inégalée : une machine dotée d'une intelligence supérieure à celle de l'humain serait-elle contrôlable ? Quels objectifs lui assigner ? Comment s'assurer qu'elle agit dans l'intérêt de l'humanité tout entière ?
+Ces préoccupations ont donné naissance à un nouveau champ de recherche : la sécurité de l'IA (AI safety), dont Anthropic — la société qui a développé Claude — est l'un des acteurs les plus engagés. L'objectif est de s'assurer que les systèmes d'IA, à mesure qu'ils gagnent en puissance, restent alignés sur les valeurs et les intérêts humains. Un défi technique et philosophique colossal, qui mobilise aujourd'hui certains des esprits les plus brillants de la planète.
+
+Conclusion
+L'intelligence artificielle n'est pas une mode passagère ni une simple évolution technologique parmi d'autres. Elle représente un changement de paradigme fondamental dans la relation entre l'humanité et la machine. Ses bénéfices potentiels — dans la santé, l'éducation, la lutte contre le changement climatique, la science — sont immenses. Ses risques — biais, surveillance, désinformation, concentration du pouvoir, perte de contrôle — le sont tout autant.
+La question n'est pas de savoir si l'IA va transformer notre monde : elle le fait déjà, chaque jour, à chaque instant. La vraie question est de savoir qui orientera cette transformation, selon quelles valeurs et au profit de qui. C'est là une question éminemment politique, sociale et humaine — et c'est précisément pourquoi elle nous concerne tous, bien au-delà des seuls ingénieurs et entrepreneurs de la Silicon Valley. L'avenir de l'intelligence artificielle se jouera dans les laboratoires, certes, mais aussi dans les parlements, les salles de classe, les tribunaux et les débats citoyens. Il appartient à chacun d'entre nous d'y prendre part.</p>
+
+</body>
+
 </html>
